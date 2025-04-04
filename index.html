@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>School Admission Form</h1>
+        
+        <form action="#" method="post">
+            <!-- Student Name -->
+            <h2 class="required">Student's Name</h2>
+            <div class="name-section">
+                <div>
+                    <label for="first-name">First</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+            
+            <!-- Class -->
+            <h2 class="required">Class you want to apply for</h2>
+            <input type="text" id="class" name="class" placeholder="For example: Class 2015-2016" required>
+            
+            <!-- Date of Birth -->
+            <h2 class="required">Student's DoB</h2>
+            <input type="date" id="dob" name="dob" required>
+            <div class="form-note">MM/DD/YYYY</div>
+            
+            <!-- Parent/Guardian -->
+            <h2 class="required">Parent/Guardian Name</h2>
+            <input type="text" id="parent-name" name="parent-name" required>
+            
+            <!-- Address -->
+            <h2>Current Address</h2>
+            <input type="text" id="street1" name="street1" placeholder="Street Address">
+            <input type="text" id="street2" name="street2" placeholder="Street Address Line 2">
+            
+            <div class="name-section">
+                <div>
+                    <input type="text" id="city" name="city" placeholder="City">
+                </div>
+                <div>
+                    <input type="text" id="zip" name="zip" placeholder="Postal / Zip Code">
+                </div>
+            </div>
+            
+            <div class="name-section">
+                <div>
+                    <input type="text" id="region" name="region" placeholder="Region">
+                </div>
+                <div>
+                    <input type="text" id="country" name="country" placeholder="Country">
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!-- Email -->
+            <h2 class="required">Email</h2>
+            <input type="email" id="email" name="email" required>
+            <div class="form-note">Your admission confirmation will be sent via email.</div>
+            
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
